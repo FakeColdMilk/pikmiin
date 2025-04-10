@@ -33,7 +33,7 @@ class MainScene extends Phaser.Scene {
 
         this.createLevel();
 
-        // Add ground button (small)
+       
         this.add.text(650, 570, '+ Platform', {
             fontSize: '16px',
             fill: '#0f0',
@@ -73,7 +73,7 @@ class MainScene extends Phaser.Scene {
     }
 
     createPlatformsForLevel(level) {
-        // Always add full ground floor
+        
         for (let x = 0; x <= 800; x += 64) {
             this.platforms.create(x, 568, 'ground').setScale(1).refreshBody();
         }
